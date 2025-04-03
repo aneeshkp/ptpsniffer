@@ -35,7 +35,7 @@ def is_ptp_announce(packet):
     return False
 
 
-def detect_packets_on_interface(interface, timeout=10):
+def detect_packets_on_interface(interface, timeout=20):
     try:
         print(f"Sniffing on {interface}...")
         packets = sniff(
